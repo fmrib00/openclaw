@@ -1,0 +1,9 @@
+{
+  "gateway": {
+    "bind": "lan",
+    "controlUi": {
+      "allowedOrigins": ["https://openclaw-production-0c41.up.railway.app"],
+      "dangerouslyAllowHostHeaderOriginFallback": true
+    }
+  }
+}
