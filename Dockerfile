@@ -98,4 +98,4 @@ ENV NODE_ENV=production
 USER node
 
 # 注意：为了让 Railway 外部能访问，绑定到 0.0.0.0
-CMD ["node", "openclaw.mjs", "gateway", "--allow-unconfigured", "--bind", "lan", "--gateway.controlUi.allowedOrigins", "https://openclaw-production-0c41.up.railway.app"]
+CMD ["node", "openclaw.mjs", "gateway", "--allow-unconfigured", "--bind", "lan"]
