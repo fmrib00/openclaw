@@ -98,6 +98,6 @@ ENV NODE_ENV=production
 USER node
 
 # 注意：为了让 Railway 外部能访问，绑定到 0.0.0.0
-# CMD ["node", "openclaw.mjs", "gateway", "--allow-unconfigured", "--bind", "lan"]
+CMD ["node", "openclaw.mjs", "gateway", "--allow-unconfigured", "--bind", "lan"]
 # CMD ["/bin/sh", "-c", "echo '{\"gateway\":{\"bind\":\"lan\",\"controlUi\":{\"allowedOrigins\":[\"https://openclaw-production-0c41.up.railway.app\"],\"dangerouslyAllowHostHeaderOriginFallback\":true}}}' > openclaw.json && node openclaw.mjs gateway --allow-unconfigured"]
-CMD ["/bin/sh", "-c", "mkdir -p /home/node/openclaw_data/.openclaw /home/node/openclaw_data/workspace && echo '{\"gateway\":{\"bind\":\"lan\",\"controlUi\":{\"allowedOrigins\":[\"https://openclaw-production-0c41.up.railway.app\"],\"dangerouslyAllowHostHeaderOriginFallback\":true}}}' > openclaw.json && node openclaw.mjs gateway --allow-unconfigured --bind lan"]
+#CMD ["/bin/sh", "-c", "mkdir -p /home/node/openclaw_data/.openclaw /home/node/openclaw_data/workspace && echo '{\"gateway\":{\"bind\":\"lan\",\"controlUi\":{\"allowedOrigins\":[\"https://openclaw-production-0c41.up.railway.app\"],\"dangerouslyAllowHostHeaderOriginFallback\":true}}}' > openclaw.json && node openclaw.mjs gateway --allow-unconfigured --bind lan"]
